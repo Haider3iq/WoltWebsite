@@ -1,0 +1,494 @@
+    
+.restaurantInfoDiv {
+  
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .restaurantInfoDiv {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .restaurantInfoDiv {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+            
+        }
+    }
+
+    .restaurantInfoDiv .parent:hover{
+        overflow-y: scroll;
+        overflow:overlay;
+        overflow-x: hidden;
+     }
+
+     .restaurantInfoDiv .parent::-webkit-scrollbar {
+        width: 0px;
+     }
+
+
+    .restaurantInfoDiv .parent:hover::-webkit-scrollbar {
+        width: 6px;
+        padding: 2rem;
+        cursor: pointer;
+       
+      }
+      .restaurantInfoDiv .parent:hover::-webkit-scrollbar-track {
+        background: transparent; 
+        margin-top: 45px;
+        margin-left: -100px;
+        border-radius: 10rem;
+        padding: 2rem;
+        cursor: pointer;
+      }
+
+      .restaurantInfoDiv .parent:hover::-webkit-scrollbar-thumb {
+          border-radius:10px;
+          padding-top: 5px;
+          padding: 2rem;
+          background: var(--fontColor); 
+          cursor: pointer;
+          position: relative;
+          z-index: 2;
+         
+      }
+
+
+  
+
+  
+
+    
+
+     .restaurantInfoDiv{
+        background-color: var(--lightBlack);
+        backdrop-filter: blur(1px);
+        transition: all 5s;
+        height: 100%;
+        z-index: 100;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;   
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+
+
+
+    }
+
+    .belowMainDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width:fit-content;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        height: 100%;
+        transform: translateY(100%);
+        transition: all 0.3s;
+        width: 100%;
+    
+    }
+
+
+    
+   .restaurantInfoDiv .parent{
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--widgetColor);
+        height: 70%;
+       /* overflow-y: scroll; */
+       border-radius: 1rem;
+       border-top-left-radius: 3rem;
+       border-top-right-radius: 3rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+       /* transform: translateY(100%);*/
+       
+       transition: all 0.3s; 
+      
+       height: fit-content;
+       width: 100%;
+    }
+
+    
+
+
+   
+
+
+
+
+
+    
+    .restaurantInfoDiv .closeDiv {
+        color:  var(--widgetColor);     
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        justify-content: center;
+        background-color: var(--fontColor);
+        border-radius: 10rem;
+        margin-left: auto;
+        top: 1%;
+        right: 3%;
+        cursor: pointer;
+        position: absolute;
+        z-index: 12;
+    }
+
+    .restaurantInfoDiv .stickyTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        position: absolute;
+        top: 0;
+        z-index: 11;
+        padding: 1rem;
+        font-size: 1.1rem;
+        color:  var(--fontColor);     
+        background-color: var(--widgetColor);
+        -webkit-box-shadow: -2px -1px 15px 7px rgba(255, 255, 255, 0);
+        -moz-box-shadow: -3px -2px 30px 14px rgba(255, 255, 255, 0.114);
+        box-shadow: -10px 5px 45px  rgba(0, 0, 0, 0.463);
+        transform: translate(0, -100px);
+        border-radius: 5rem;
+    }
+
+
+    .restaurantInfoDiv .closeDiv:hover {
+       transform: scale(1.2);
+        color: red;
+        transition: all 0.2s;
+    }
+    .restaurantInfoDiv .closeDiv:active {
+        font-size: 5rem;
+        color: var(--widgetColor);
+    }
+   
+
+      
+    .restaurantInfoDiv .orderImage{
+        width: 100%;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        margin-bottom: 0;
+        
+ 
+     }
+
+
+
+
+
+
+     .restaurantInfoDiv .itemsOnBackgroundDiv {
+        position: relative;    
+        margin: 2%;
+        padding: 0;
+        max-width: 1140px;
+        width: fit-content;
+        margin-right: 2%;
+        margin-left: 2%;
+        }
+
+
+
+    
+
+    .restaurantInfoDiv .itemTitle {
+        font-size:xx-large;
+        color: var(--fontColor);
+        font-family: 'Signika', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 4%;
+        line-height: 25px;
+    }
+
+    .restaurantInfoDiv .itemSubTitle {
+        font-size: 0.95rem;
+        color: var(--lighterFontColor);
+        font-family: 'Signika';
+        font-weight: 400;
+        margin-top: 2%;
+        margin-bottom: 2%;
+       
+    }
+
+    .restaurantInfoDiv .belowSubTitle {
+        font-size: 0.9rem;
+        color: lightgreen;
+        font-family: 'Signika', sans-serif;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 2%;
+       
+    }
+
+    .restaurantInfoDiv .belowDivider {
+        background-color: transparent;
+        position: absolute;
+        right: -35px;
+        border-top: solid var(--lightBlack);
+        width: 250%;
+        height: 1rem;
+        z-index: 0;
+    }
+
+    
+        /*#TODO mobile                                                                  */
+        @media (max-width: 550.56px) { 
+            .restaurantInfoDiv .parent::-webkit-scrollbar {
+                width: 0px;
+             }
+        
+        
+            .restaurantInfoDiv .parent:hover::-webkit-scrollbar {
+                width: 0px;
+                padding: 2rem;
+               
+              }
+           
+        }    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    .infoWidgetDiv {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+    }
+    
+
+
+
+    .infoWidgetDiv .firstWidget {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--widgetColor);
+        width: 100%;
+        max-width: 700px;
+        border-radius: 0rem;
+        padding-bottom:large;
+        overflow-y: auto;
+        color: var(--fontColor);
+        overflow-x: hidden;
+    } .infoWidgetDiv .mainTitle {
+        margin-top: 2.5%;
+        font-size:large;
+        font-weight: bold;
+        padding-inline: 5%;
+    }
+
+
+
+    .infoWidgetDiv .row { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding-inline: 5%;
+        cursor: pointer;
+
+    } .infoWidgetDiv .rowTitlesDiv {
+        margin-block:  3%;
+        display: flex;
+        flex-direction: column;
+  
+
+    } .infoWidgetDiv .rowTitle{
+        margin-block: 3%;
+        font-size: medium ;
+        font-weight: 400;
+        text-transform: capitalize;
+    } .infoWidgetDiv  .rowSubTitle{
+        font-size: x-small ;
+    } .infoWidgetDiv .row:hover {
+        transition: all 0.2s;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0.4rem,
+    } 
+    
+    .infoWidgetDiv .buttonRow{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        padding-inline: 2%;
+        cursor: pointer;
+        margin-inline: 4%;
+        border-radius: 1rem;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .infoWidgetDiv .buttonRowSubTitle {
+        font-size: x-small ;
+    } .infoWidgetDiv .buttonRow:hover{
+        transition: all 0.2s;
+   
+        background-color:var(--backgroundColor);
+    }
+
+
+    .infoWidgetDiv .row-time{ 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding-inline: 5%;
+        padding-block: 0;
+        margin-block: 0;
+        cursor: pointer;
+     
+    } .infoWidgetDiv .row-time:hover {
+        transition: all 0.2s;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0.4rem,
+    }  .infoWidgetDiv .row-time .rowTitlesDiv {
+        margin-block:  1.5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoWidgetDiv .rowWords{
+        margin-block:2.5%;
+        margin-inline: 5%;
+        columns: 3;
+        display: inline block;
+        flex-direction: column;
+        width: fit-content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .infoWidgetDiv .categoryRowTitlesDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    } .infoWidgetDiv .categoryRowSubTitle {
+        font-size:small ;
+        font-weight: 400;
+        color: lightgreen;
+        cursor: pointer;
+        border-radius: 2rem;
+        padding-inline: 5%;
+        width: fit-content;
+    }  .infoWidgetDiv .categoryRowSubTitle:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+
+    .infoWidgetDiv .categoriesDiv {
+       
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+   
+    
+
+
+
+
+    @media (max-width: 550px) {
+        .infoWidgetDiv {
+            overflow: hidden;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 1rem;
+            background-color: var(--widgetColor);
+        }
+    }
+    
+        
+    
+    

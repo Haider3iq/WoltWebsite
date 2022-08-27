@@ -1,0 +1,145 @@
+.full-map-area{
+	position:relative;
+	border-radius: 12px;
+    overflow: hidden;
+	
+	a{
+		position:absolute;
+		bottom:30px;
+		left:30px;
+	}
+	i{
+		background: #3e4954;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		width: 56px;
+		height: 56px;
+		text-align: center;
+		line-height: 56px;
+		font-size: 24px;
+		color: #fff;
+		border-radius: 56px;
+	}
+	img
+	{
+		width:100%;
+	}
+}
+.iconbox{
+    position: relative;
+    padding-left: 70px;
+	
+	i{
+		background:$primary;
+		width:50px;
+		height:50px;
+		line-height:50px;
+		border-radius:50px;
+		text-align:center;
+		font-size:28px;
+		color:$white;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	p{
+		margin: 0;
+		color: #484848;
+		font-size: 18px;
+		line-height: 1.3;
+		font-weight: 500;
+	}
+	small{
+		margin-bottom: 5px;
+		font-size: 16px;
+		display: block;
+	}
+}
+.widget-timeline-icon{
+	li{
+		padding-left: 25px;
+		position: relative;
+		margin-left: 11px;
+		border-left: 3px solid $primary;
+		min-height: 80px;
+		padding-top: 1px;
+	
+		.icon{
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			font-size: 24px;
+			color: #fff;
+			text-align: center;
+			line-height: 22px;
+			border-radius: 22px;
+			left:-13px;
+			top: 0;
+		}
+		.timeline-panel{
+		
+		}
+		&:last-child{
+			border-left: 3px solid transparent;
+		}
+	}
+}
+
+.order-time-picker{
+	.react-time-picker{
+		cursor:pointer;
+		button{
+			display:none;
+		}
+		.react-time-picker__inputGroup__amPm{
+			appearance: none;
+		}
+		.react-time-picker__wrapper{
+			border:0;
+			border: 0;
+			padding: 0.938rem 1.5rem;
+			background:$primary-light;
+			border-radius:50px;
+			color:$primary;
+		}
+		.react-time-picker__inputGroup__input{
+			color:$primary;
+			width: 30px;
+			option{
+				background:$primary-light;	
+				color:$primary;
+				&:hover{
+					background:$primary;	
+					color:$white;
+				}
+			}
+		}
+		.react-clock__face{
+			background: #ededed;
+			padding: 10px 10px;	
+			border: 10px solid #ededed;
+		}
+		.react-clock__hand__body{
+			background-color: $primary;
+		}
+		.react-time-picker__clock{
+			box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+			border-radius:10px;
+			border: 0 !important;
+			margin-right: 50%;
+			margin-top: 7%;
+		}
+		
+		
+		&:hover{
+			.react-time-picker__wrapper{
+				color:$white;
+				background:$primary;
+			}
+			.react-time-picker__inputGroup__input{
+				color:$white;
+			}
+		}
+	}	
+}

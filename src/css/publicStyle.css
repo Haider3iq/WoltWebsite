@@ -1,0 +1,181 @@
+.indexMainContainer {
+  
+    --goBackIconSize: clamp(4rem, 6vw, 3rem);
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Signika', sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .indexMainContainer {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .indexMainContainer {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+            
+        }
+    }
+
+
+
+
+
+
+
+     *{
+        font-weight: 500;
+        font-style: normal;
+     }
+
+
+
+     .goToPreviousPageDiv {
+        width: 100%;
+        padding-inline: 1rem;
+     }
+     .goToPreviousPageIcon {
+        font-size: clamp(1rem, 3vw, 3rem);
+        position: absolute;
+        background-color: transparent;
+        margin-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: var(--widgetColor);
+        border-radius: 42%;
+        cursor: pointer;
+        background-color: red;
+
+    } .goToPreviousPageIcon:hover {
+        transition: all 0.3s;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+
+
+
+
+    .indexMainContainer{
+        font-style: normal;
+    }
+    .RestaurantsDiv {
+        padding: 1.3rem;
+        padding-bottom: 0.5vw;
+        padding-top: 0;
+        max-width: 1600.33px;
+        transition: all 0.5s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .HomeDiv {
+        padding: 1.3rem;
+        padding-bottom: 0.5vw;
+        padding-top: 0;
+        max-width: 1600.33px;
+        transition: all 0.5s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    
+    
+    @media(min-width: 1620px) {
+        .RestaurantsDiv{
+            padding-top: 0rem;
+            padding-bottom: 0rem;   
+        }
+
+        .HomeDiv {
+            padding-top: 0;
+            padding-bottom: 0rem;   
+        }
+       
+    }
+    
+    
+    
+    
+    @media(max-width: 800px) {
+        .RestaurantsDiv{
+            padding-top: 0rem;
+          
+        }
+       
+        .HomeDiv {
+            padding-top: 0;
+        }
+       
+    }
+    
+    @media(max-width: 555px) {
+        .RestaurantsDiv{
+            padding-top: 0rem;
+        }
+
+        .HomeDiv {
+            padding-top: 0;
+        }
+       
+    }
+
+
+
+
+
+
+

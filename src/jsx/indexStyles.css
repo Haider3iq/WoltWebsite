@@ -1,0 +1,39 @@
+
+
+.websiteBody {
+    /* padding: 0.5vw;
+    padding-top: 12rem;
+    overflow: hidden; */
+}
+
+
+
+
+
+@media(min-width: 1620px) {
+    /* .websiteBody{
+        padding: 2.5vw;
+        display: block;
+        padding-top: 14rem;
+        padding-bottom: 0rem;
+    } */
+   
+}
+
+
+
+
+@media(max-width: 800px) {
+    /* .websiteBody{
+        padding-top: 10rem;
+      
+    } */
+   
+}
+
+@media(max-width: 555px) {
+    /* .websiteBody{
+        padding-top: 4rem;
+    } */
+   
+}

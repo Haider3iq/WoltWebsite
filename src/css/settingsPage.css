@@ -1,0 +1,192 @@
+    
+.settingsPageMainDiv {
+  
+    --pageTitleSize: clamp(0.9rem, 2vw, 1.4rem); 
+    --titleSize: clamp(0.7rem, 1.8vw, 1rem); 
+    --textSize: clamp(0.5rem, 1.3vw, 0.7rem); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+    --titleSpace:  clamp(0.5rem, 1.5vw, 1rem); 
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .settingsPageMainDiv {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .settingsPageMainDiv {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+            
+        }
+    }
+
+    .settingsPageMainDiv *{
+        color: var(--fontColor);
+        font-weight: 300;
+        overflow: hidden;
+    }
+
+
+
+
+    .settingsPageMainDiv {
+        display: flex;
+        background-color:var(--backgroundColor);
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+
+    .settingsPageMainDiv .firstWidget {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--widgetColor);
+        width: 100%;
+        max-width: 700px;
+        border-radius: 1rem;
+        padding-block: var(--titleSize);
+        overflow-y: auto;
+    } .settingsPageMainDiv .mainTitle {
+        margin-top: 2.5%;
+        font-size: var(--pageTitleSize);
+        font-weight: bold;
+        padding-inline: var(--titleSize);
+    }
+
+
+
+    .settingsPageMainDiv .imageRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding-inline: var(--titleSize);
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .settingsPageMainDiv .profileImage {
+        min-width: var(--titleSize);
+        aspect-ratio: 1/1;
+        z-index: 10;
+        padding: 0;
+        max-width: 80px;
+        border-radius: 50%;
+        background-size:cover;
+        background-position: center;
+        border: 8px solid var(--widgetColor);
+        cursor: pointer;
+ 
+    } .settingsPageMainDiv .imageRow:hover {
+        transition: all 0.2s;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0.4rem,
+    } .nameRow{
+        margin-right: auto;
+        padding-inline: 10px;
+    } .nameTitle {
+        font-size: var(--titleSize);
+        font-weight: 500;
+    } .nameSub {
+        font-size: var(--textSize);
+        font-weight: 300;
+    }
+    
+    
+    .settingsPageMainDiv .row { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding-inline: var(--titleSpace);
+        cursor: pointer;
+
+    } .settingsPageMainDiv .row .rowTitlesDiv {
+        margin-block: var(--textSize);
+        display: flex;
+        flex-direction: column;
+  
+
+    } .settingsPageMainDiv .row .rowTitle{
+        font-size: var(--titleSize) ;
+        font-weight: 400;
+    } .settingsPageMainDiv .row .rowSubTitle{
+        font-size: var(--textSize) ;
+    } .settingsPageMainDiv .row:hover {
+        transition: all 0.2s;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0.4rem,
+    } 
+
+
+
+
+    @media (max-width: 550px) {
+        .settingsPageMainDiv {
+            overflow: hidden;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 1rem;
+            background-color: var(--widgetColor);
+        }
+    }

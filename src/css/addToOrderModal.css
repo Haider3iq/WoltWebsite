@@ -1,0 +1,492 @@
+    
+.addToOrderModalDiv {
+  
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .addToOrderModalDiv {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .addToOrderModalDiv {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+            
+        }
+    }
+
+    .addToOrderModalDiv .parent:hover{
+        overflow-y: scroll;
+        overflow:overlay;
+        overflow-x: hidden;
+     }
+
+     .addToOrderModalDiv .parent::-webkit-scrollbar {
+        width: 0px;
+     }
+
+
+    .addToOrderModalDiv .parent:hover::-webkit-scrollbar {
+        width: 6px;
+        padding: 2rem;
+        cursor: pointer;
+       
+      }
+      .addToOrderModalDiv .parent:hover::-webkit-scrollbar-track {
+        background: transparent; 
+        margin-top: 45px;
+        margin-left: -100px;
+        border-radius: 10rem;
+        padding: 2rem;
+        cursor: pointer;
+      }
+
+      .addToOrderModalDiv .parent:hover::-webkit-scrollbar-thumb {
+          border-radius:10px;
+          padding-top: 5px;
+          padding: 2rem;
+          background: var(--fontColor); 
+          cursor: pointer;
+          position: relative;
+          z-index: 2;
+         
+      }
+
+
+  
+
+  
+
+    
+
+    .addToOrderModalDiv{
+        background-color: var(--lightBlack);
+        backdrop-filter: blur(1px);
+        transition: all 5s;
+        height: 100%;
+        z-index: 100;
+        width: 100%;
+        align-self: center;
+        position: fixed;
+        top: 0;
+        right: 0;   
+        padding-top: 5%;
+        /* display: none; */
+    }
+
+    .belowMainDiv {
+        display: flex;
+        flex-direction: column;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        height: 100%;
+        /* transform: translateY(100%); */
+        transition: all 0.3s;
+    }
+
+
+    
+    .addToOrderModalDiv .parent{
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--widgetColor);
+        height: 70%;
+       /* overflow-y: scroll; */
+      
+       border-top-left-radius: 3rem;
+       border-top-right-radius: 3rem;
+       overflow-y: scroll;
+       overflow-x: hidden;
+       /* transform: translateY(100%);
+       
+       transition: all 0.3s; */
+       padding-bottom: 1rem;
+       height: fit-content;
+       /* transform: translateY(120%); */
+       transition: all 0.3s;
+       }
+
+    
+
+
+   
+
+
+
+
+
+    
+    .addToOrderModalDiv .closeDiv {
+        color:  var(--widgetColor);     
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        justify-content: center;
+        background-color: var(--fontColor);
+        border-radius: 10rem;
+        margin-left: auto;
+        top: 1%;
+        right: 3%;
+        cursor: pointer;
+        position: absolute;
+        z-index: 12;
+    }
+
+    .addToOrderModalDiv .stickyTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        position: absolute;
+        top: 0;
+        z-index: 11;
+        padding: 1rem;
+        font-size: 1.1rem;
+        color:  var(--fontColor);     
+        background-color: var(--widgetColor);
+        -webkit-box-shadow: -2px -1px 15px 7px rgba(255, 255, 255, 0);
+        -moz-box-shadow: -3px -2px 30px 14px rgba(255, 255, 255, 0.114);
+        box-shadow: -10px 5px 45px  rgba(0, 0, 0, 0.463);
+        transform: translate(0, -100px);
+        border-radius: 5rem;
+    }
+
+
+    .addToOrderModalDiv .closeDiv:hover {
+       transform: scale(1.05);
+        color: red;
+        transition: all 0.2s;
+    }
+    .addToOrderModalDiv .closeDiv:active {
+        /* font-size: 5rem; */
+        color: var(--widgetColor);
+    }
+   
+
+      
+    .addToOrderModalDiv .orderImage{
+        width: 100%;
+        aspect-ratio: 3/2;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        margin-bottom: 0;
+        object-position: center;
+        object-fit: fill;
+        
+ 
+     }
+
+
+
+
+
+
+     .addToOrderModalDiv .itemsOnBackgroundDiv {
+        position: relative;    
+        margin: 2%;
+        padding: 0;
+        max-width: 1140px;
+        width: fit-content;
+        margin-right: 2%;
+        margin-left: 2%;
+        }
+
+
+
+    
+
+    .addToOrderModalDiv .title {
+        font-size:xx-large;
+        color: var(--fontColor);
+        font-family: 'Signika', sans-serif;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 4%;
+        line-height: 100%;
+    }
+
+    .addToOrderModalDiv .subTitle {
+        font-size: 0.95rem;
+        color: var(--lighterFontColor);
+        font-family: 'Signika';
+        font-weight: 400;
+        margin-top: 2%;
+        margin-bottom: 2%;
+       
+    }
+
+    .addToOrderModalDiv .belowSubTitle {
+        font-size: 0.9rem;
+        color: lightgreen;
+        font-family: 'Signika', sans-serif;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 2%;
+       
+    }
+
+    .addToOrderModalDiv .belowDivider {
+        background-color: transparent;
+        position: absolute;
+        right: -35px;
+        border-top: solid var(--lightBlack);
+        width: 250%;
+        height: 1rem;
+        z-index: 0;
+    }
+
+
+    .selectMultiplesDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    
+    .selectableItemsDiv{
+        
+    }
+
+    .selectableItemsDiv .title {
+        display:flex;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        color: var(--fontColor);
+        font-size: var(--titleSize);
+        font-weight: bold;
+        font-family: 'Signika' 'serif';
+    }
+
+    .multiSelectionItemsDiv{
+        
+    }
+
+    .addToOrderModalDiv .multiSelectionItemsDiv .itemTitle {
+        display:flex;
+        flex-direction: column;
+        font-size: var(--titleSize);
+        text-transform: capitalize;
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        color: var(--fontColor);
+        font-weight: bold;
+        font-family: 'Signika' 'serif';
+    } .addToOrderModalDiv .multiSelectionItemsDiv .itemSubTitle {
+        display: flex;
+        margin-right: auto;
+        text-transform: none;
+        display:flex;
+        font-size: 70%;
+        font-weight: 400;
+        color: var(--fontColor);
+        font-weight: normal;
+        font-family: 'Signika' 'serif';
+    }
+
+    .addToOrderModalDiv .selectableItemsDiv .itemTitle {
+        display:flex;
+        flex-direction: column;
+        font-size: var(--titleSize);
+        text-transform: capitalize;
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        color: var(--fontColor);
+        font-weight: bold;
+        font-family: 'Signika' 'serif';
+    } .addToOrderModalDiv .selectableItemsDiv .itemSubTitle {
+        display: flex;
+        margin-right: auto;
+        text-transform: none;
+        display:flex;
+        font-size: 70%;
+        font-weight: 400;
+        padding-left: 1rem;
+        color: var(--fontColor);
+        font-weight: normal;
+        font-family: 'Signika' 'serif';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    .bottomWidget {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--widgetColor);
+        padding: 2%;
+        width: 100%;
+    }
+
+    .increasingWidgetDiv {
+        width: 42%;
+        padding: 1rem;
+        background-color: var(--greenColorLinear);
+        border-radius: 0.7rem;
+    }
+
+    .priceButton {
+        background-color: var(--primary);
+        width: 56%;
+        cursor: pointer;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        border-radius: 0.7rem;
+    
+        color: var(--white);
+        font-family: 'Signika' 'serif';
+        font-weight: 600;
+    }
+
+    .priceButton:hover {
+        background-color: var(--primary);
+        cursor: pointer;
+        -webkit-box-shadow: -2px -1px 15px 7px rgba(255, 255, 255, 0);
+        -moz-box-shadow: -3px -2px 30px 14px rgba(255, 255, 255, 0.114);
+        box-shadow: -1px 1px 15px  rgba(0, 0, 0, 0.463);
+    }
+
+    .priceButton i {
+     
+    }
+
+    
+   
+
+  
+
+    
+
+  
+
+
+
+    @media (max-width: 750px) { 
+
+    }
+
+    
+    
+        /*#TODO mobile                                                                  */
+        @media (max-width: 550.56px) { 
+            .addToOrderModalDiv .parent::-webkit-scrollbar {
+                width: 0px;
+             }
+        
+        
+            .addToOrderModalDiv .parent:hover::-webkit-scrollbar {
+                width: 0px;
+                padding: 2rem;
+               
+              }
+           
+        }    
+       
+
+
+        @media (min-width: 730px) { 
+
+        }    
+
+        @media (max-width: 700px) { 
+          
+          
+           
+        }  
+
+        @media (min-width: 1023px) {
+
+        }
+
+ 
+
+        @media (min-width: 1650px) { 
+            
+    }
+    
+    
+    
+        
+    
+    

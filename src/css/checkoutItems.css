@@ -1,0 +1,214 @@
+
+.checkoutItems *{
+    color: var(--widgetColor);
+    font-size: medium;
+}
+.checkoutItems{
+    cursor: pointer;
+}
+
+.checkoutItems .childDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    
+}
+
+
+.checkoutItems .numberAndTitleDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.checkoutItems .number {
+    background-color: red;
+    padding-inline: 6%;
+    padding-block: 1%;
+    border-radius: 0.2rem;
+    color: white;
+    margin-right: 5%;
+
+} .checkoutItems .title{
+    white-space:nowrap;
+}
+
+.checkoutItems .orderImage {
+    width: 10%;
+    border-radius: 0.2rem;
+}
+
+
+.checkoutItems .itemOptionAndDetailDiv{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+} .checkoutItems .itemOptionTitle{
+    font-size: small;
+    color: var(--backgroundColor);
+    font-weight: 600;
+    opacity: 0.9;
+    margin-right: 2.5%;
+    text-transform: capitalize;
+} .checkoutItems .itemOptionDetail{
+    font-size: small;
+    font-weight: 400;
+    text-transform: capitalize;
+} .price {
+    color: lightgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    /* @media (prefers-color-scheme: dark) {
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            
+            --widgetFontColor: #fff;
+            --fontColor: #fff;
+            --backgroundColor: #202124;
+            --widgetColor: #393F48;
+        }
+        }
+        
+        @media (prefers-color-scheme: light) { 
+            :root {
+                --primary: #6043D5;
+                --primaryColorLinear: #B200D1;
+                --secondPrimaryColor: #DBE9F7;
+                --fontColor: #202124;
+                --widgetFontColor: #202124;
+                --backgroundColor: #fff;
+                --widgetColor: #F9F9F9;
+            }
+        } */
+    
+    
+    
+    
+    
+     
+    
+       .checkoutItems  .increaseMenusWidget {
+            display: flex;
+            flex-direction: row;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            min-width:7rem;
+            width: 100%;
+            margin-right: 1rem;
+            padding-inline: 3%;
+            align-items: center;
+            position: relative;
+            border-radius: 0.4rem;
+            z-index: 10;
+            background-color: var(--greenColorLinear);
+            padding-block: 3%;
+        }
+    
+    
+    
+       
+        
+    
+       .checkoutItems  .increaseMenusWidget .plusIcon {
+            display: flex;
+            color: var(--primary);
+            font-size: 2rem;
+            background-color: var(--white);
+            font-size: 1.3rem;
+            border-radius: 0.4rem;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            
+          
+        }
+       .checkoutItems  .increaseMenusWidget .plusIcon:hover {
+            transform: scale(1.08);
+            transition: all 0.2s;
+           
+        }
+    
+    
+    
+       .checkoutItems  .increaseMenusWidget .numberText {
+            display: flex;
+            color: var(--widgetColor);
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-inline: 15%;
+        }
+    
+         
+       .checkoutItems  .increaseMenusWidget .minusIcon {
+            display: flex;
+            color: var(--primary);
+            font-size: 1.3rem;
+            background-color: transparent;
+            background-color: var(--white);
+            border-radius: 0.4rem;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            
+            }
+    
+           .checkoutItems  .increaseMenusWidget .minusIcon:hover {
+                transform: scale(1.08);
+                transition: all 0.2s;
+            }
+
+
+
+
+
+            .checkoutItems  .increaseMenusWidget .trashIcon{
+                display: flex;
+                color: var(--primary);
+               
+                font-size: 1.3rem;
+                border-radius: 0.4rem;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin-left: 01rem;
+           
+            } .checkoutItems .increaseMenusWidget .trashIcon:hover{
+                background-color: white;
+                transform: scale(1.08);
+                transition: all 0.2s;
+            }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      

@@ -1,0 +1,239 @@
+.profileMenu  {
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(2rem, 30vw, 10rem);
+    --imageProfileSize: clamp(rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --padding: clamp(0.4rem, 4vw, 2rem); 
+    --fontFamily: 'Signika', sans-serif;
+}
+
+
+    @media(max-width: 550px) {
+
+    }
+
+/* 
+    html {
+        scroll-behavior: smooth;
+      } */
+    
+    
+    
+    
+    
+    /* //#111 header styling */
+    .profileMenu {
+        background: transparent;
+        display:flex;
+        overflow-x: scroll;
+        margin-bottom: 2%;
+        /* background: red;
+         margin: 0%;
+        position: fixed;
+        right: -2%;
+        top: 0;
+        z-index: 20; */
+               
+    }
+
+    .profileMenu {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        
+    }
+    .profileMenu::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+
+    .profileMenu:hover ::-webkit-scrollbar { 
+        display: flex;  /* Safari and Chrome */
+      
+    }
+
+    .profileMenu:hover {
+        -ms-overflow-style: flex;  /* Internet Explorer 10+ */
+        scrollbar-width: flex;  /* Firefox */
+        
+    }
+
+
+
+
+    .profileMenu .profilecustomNavLink {
+        /* margin-right: var(--smallerResponsiveSpace);
+        margin-left: var(--smallerResponsiveSpace); */
+        border-radius: 0.5rem;
+        padding:1%;
+        padding-right: 2%;
+        padding-left: 2%;
+        margin: 0.5%;
+        background-color: var(--backgroundColor);
+        display: flex;
+      
+        border-bottom: solid transparent;
+        border-color: transparent;
+        width: fit-content;
+        cursor: pointer;
+        
+        
+    }
+
+
+    /* .profileMenu .nav-link {
+
+    } */
+
+
+    
+
+    .profileMenu .profilecustomNavLink i {
+        display: inline-block;
+        
+        /* margin: 0rem 1rem 1rem 1rem; */
+        color: var(--white);
+        
+    }
+
+
+        
+    .profileMenu .profilecustomNavLink:active {
+            background-color: red;
+    }
+
+
+  
+
+    .profileMenu .profilecustomNavLink:hover {
+        /* border-bottom: solid var(--white); */
+        background-color: var(--primary);
+        
+    } .profileMenu .profilecustomNavLink:hover i {
+        color: var(--white);
+        /* transition: all 0.2s ; */
+        
+       }
+       
+
+      .profileMenu .activeNavLink {
+       /* margin-right: var(--smallerResponsiveSpace);
+        margin-left: var(--smallerResponsiveSpace); */
+        border-radius: 0.5rem;
+        padding:1%;
+        padding-right: 2%;
+        padding-left: 2%;
+        margin: 0.5%;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid transparent;
+        border-color: transparent;
+        width: fit-content;
+  
+
+        /* // */
+    } .profileMenu .activeNavLink i {
+        display: inline-block;
+        color: var(--white); 
+
+        
+        }
+
+        .profileMenu .navigationIconDiv {
+            display: flex;
+            align-items: center;
+            font-size:  medium;
+            text-transform: capitalize;
+            justify-content: center;
+            font-weight: 330;
+            height: fit-content;
+            white-space: nowrap;
+            font-family: 'Signika';
+            font-weight: 300;
+            font-style: normal;
+        }
+
+
+
+    
+
+
+
+    @media only screen and (max-width: 700px) {
+       
+
+    }
+
+    @media (min-width: 1023px) {
+      
+        .profileMenu{
+            display: inline-block;
+            flex-direction: column;
+            width: fit-content;
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 100%;      
+            margin: 0%;
+            background-color: transparent;
+            /* right: -2%; */
+
+        }
+
+
+        .profileMenu .profilecustomNavLink {
+        border-bottom: solid transparent;
+        background-color: transparent;
+        padding: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        }
+
+        .profileMenu .profilecustomNavLink i {
+            color: var(--fontColor);
+        }
+    
+
+ 
+    
+        .profileMenu .profilecustomNavLink:hover {
+            background-color: var(--primary);
+            transition: all 0.5s;
+            
+        } .profileMenu .profilecustomNavLink:hover i {
+            color: var(--fontColor);
+           }
+           
+    
+          .profileMenu .activeNavLink {
+            transition: all 0.5;
+            background-color: transparent;
+            background-color: var(--primary);
+            padding: 0.2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        } .profileMenu .activeNavLink i {
+            color: var(--fontColor); 
+            }
+    }
+
+    @media only screen and (min-width: 2000px) {
+       
+        /* .profileMenu .navigationIconDiv {
+            font-size:  clamp(0.5rem, 1.8vw, 2rem);
+            text-overflow:unset;
+            display:flex;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: horizontal;
+        } */
+
+    }
+
+  

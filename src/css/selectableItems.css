@@ -1,0 +1,257 @@
+.selectableItems  {
+    --primary: #6043D5;
+    --primaryColorLinear: #B200D1;
+    --secondPrimaryColor: #DBE9F7;
+    
+    --widgetFontColor: #fff;
+    --fontColor: #fff;
+    --backgroundColor: #202124;
+    --widgetColor: #393F48;
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(2rem, 30vw, 10rem);
+    --imageProfileSize: clamp(rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --padding: clamp(0.4rem, 4vw, 2rem); 
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+    @media(max-width: 550px) {
+
+    }
+
+    
+    
+    
+    
+    
+    /* //#111 header styling */
+    .selectableItems {
+        overflow-x: hidden;
+        margin: 2%;
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        
+    }
+
+    .selectableItems {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        
+    }
+    .selectableItems::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+
+
+
+    .selectableItems .customNavLink {
+        /* margin-right: var(--smallerResponsiveSpace);
+        margin-left: var(--smallerResponsiveSpace); */
+        border-radius: 1.5rem;
+        margin: 1.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid transparent;
+        border-color: transparent;
+        width: fit-content;
+        cursor: pointer;
+        width: 100%;
+      
+        
+        
+    }
+
+
+    /* .selectableItems .nav-link {
+
+    } */
+
+
+    
+
+    .selectableItems .customNavLink i {
+        display: inline-block;
+
+        /* margin: 0rem 1rem 1rem 1rem; */
+        color: var(--white);
+        
+    }
+
+
+
+  
+
+     .selectableItems .customNavLink:hover i {
+        color: var(--white);
+        /* transition: all 0.2s ; */
+       }
+    
+
+       .selectableItems  i {
+        color: var(--white);
+        /* transition: all 0.2s ; */
+        width: 100%;
+       }
+       
+
+      .selectableItems .activeNavLink {
+        border-radius: 1.5rem;
+        margin: 1.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid transparent;
+        border-color: transparent;
+        width: fit-content;
+        cursor: pointer;
+        width: 100%;
+        
+        /* // */
+    }  
+        
+
+    .selectableItems .navigationIconDiv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .selectableItems  .navigationTitle {
+            font-weight: 330;
+            font-size:  70%;
+            color: var(--fontColor);
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            font-weight: 400;
+            height: fit-content;
+            align-items: center;
+            position: relative;
+            z-index: 9;
+        }
+
+        .selectableItems .unAcitveIcon {
+            color:  white;     
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            justify-content: center;
+            background-color: white;
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 10rem;
+            margin-right: 8px;
+        }
+        .selectableItems .navigationIconDiv  .acitveIcon {
+            color:  var(--primary);     
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            justify-content: center;
+            background-color: var(--fontColor);
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 10rem;
+            margin-right: 8px;
+            
+        }
+        .selectableItems .navigationIconDiv  .acitveIconClose{
+            color:  var(--primary);     
+            display: none;
+            align-items: center;
+            font-size: 1.3rem;
+            justify-content: center;
+            background-color: var(--fontColor);
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 10rem;
+            margin-right: 1rem;
+            
+        }
+
+            .selectableItems .customNavLink:hover  .unAcitveIcon {
+            color:  transparent;     
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            justify-content: center;
+            background-color: var(--fontColor);
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 10rem;
+            transition: all 0.3s;
+            border: solid var(--primary);
+        }
+
+
+
+
+
+
+
+        @media(min-width: 550px) {
+            .selectableItems .navigationTitle {
+                margin-right: 1rem;
+                font-size:  0.8rem;
+                background-color: transparent;
+            }
+            
+        }
+
+
+
+        @media(max-width: 550px) {
+            .selectableItems .navigationTitle {
+                font-size:  80%;
+            }
+          
+        }
+
+
+        @media(max-width: 460px) {
+            .selectableItems .navigationTitle {
+                font-size:  70%;
+            }
+           
+        }
+
+       
+
+        
+
+
+
+  

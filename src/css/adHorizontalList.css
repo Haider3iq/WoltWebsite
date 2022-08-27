@@ -1,0 +1,183 @@
+.swiper{
+  
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp (5rem, 10vw, 5vw);
+
+    
+    --imageProfileSize: clamp(3rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+
+    
+.addHorizontal    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+
+
+
+
+
+    
+
+.addHorizontal    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-right: 5%;
+        padding-left: 5%;      
+    }
+      
+  .addHorizontal    .swiper-slide {
+        text-align: center;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .addHorizontal    .swiper-slide:hover {
+        padding: 0.3rem;
+        transition: all 0.4s ;
+    }
+      
+  .addHorizontal    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    
+
+   .addHorizontal    .swiperImage {
+        border-radius: 1vw;
+        margin-bottom: -5rem;
+        }
+
+
+     .addHorizontal    .swiperTextDiv {
+            padding: 1vw;
+            background-color: var(--widgetColor);
+            padding-bottom: 5rem;
+            }
+
+        .addHorizontal    .mySwiper .swiper-button-next:after {
+                font-size: var(--iconSize);
+            }
+
+        .addHorizontal    .mySwiper .swiper-button-prev:after {
+                font-size: var(--iconSize);
+            }
+
+            
+
+
+
+
+        .addHorizontal    .mySwiper .swiper-button-prev {
+               
+                padding: var(--smallerIconSize);
+                border-radius: 50rem;
+                background-color: var(--fontColor);
+                color: var(--primary);
+                
+               
+                
+            }
+
+        .addHorizontal    .mySwiper .swiper-button-next {
+                padding: var(--smallerIconSize);
+                border-radius: 50rem;
+                background-color: var(--fontColor);
+                color: var(--primary);
+                
+
+            }
+        
+      
+
+
+.addHorizontal    .title {
+        color: var(--fontColor);
+        font-size: 1.35rem;
+        /* font-family: var(--fontFamily);
+        font-weight:200; */
+    }
+   
+.addHorizontal .subTitle{
+        color: var(--fontColor); 
+        font-size: 0.9rem;
+        /* font-family: var(--fontFamily);  */
+    }
+
+
+
+    
+    
+        /*#TODO mobile                                                                  */
+        @media (max-width: 555.56px) { 
+        .addHorizontal    .mySwiper .swiper-button-prev {
+                display: none;
+            }
+        .addHorizontal    .mySwiper .swiper-button-next {
+                display: none;
+            }
+          
+           
+        }    
+       
+    
+    
+    
+        
+    
+    

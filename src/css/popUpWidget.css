@@ -1,0 +1,262 @@
+    
+.popUpWidgetMainDiv {
+  
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .popUpWidgetMainDiv {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .popUpWidgetMainDiv {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+
+
+    .popUpWidgetMainDiv {
+        display: flex;
+        width: 100%;
+        background-color: var(--backgroundColor);
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 5%;
+
+    } 
+    
+    .popUpWidgetMainDiv .widget {
+        background-color: var(--widgetColor) ;
+        padding-block: 1%;
+        padding-inline: 2%;
+        border-radius: 1.2rem;
+        width: 100%;
+        max-height: 600px;
+        max-width: 550px;
+        margin-bottom: 12%;
+        overflow-y: auto;
+    }
+
+    .popUpWidgetMainDiv .title {
+        font-size: large;
+        margin-block: 2%;
+        color: var(--fontColor);
+        font-weight: bold;
+    } .popUpWidgetMainDiv .subText {
+        font-size: small;
+        padding: 1%;
+        font-weight: 300;
+    }
+
+    .popUpWidgetMainDiv ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgba(0, 0, 0, 0.3);
+        opacity: 1; /* Firefox */
+      }
+      
+    .popUpWidgetMainDiv:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgba(0, 0, 0, 0.3);
+      }
+      
+      .popUpWidgetMainDiv  ::-ms-input-placeholder { /* Microsoft Edge */
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+
+    .inputRow {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+
+        }
+    .popUpWidgetMainDiv .phoneNumberTextInput {
+        color: var(--widgetColor);
+        caret-color: var(--widgetColor);
+        background-color: var(--fontColor);
+        width: 100%;
+        border-radius: 1rem;
+        border-color: transparent;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-left: 2%;
+        }
+        .popUpWidgetMainDiv .customTextInput {
+            color: var(--widgetColor);
+            caret-color: var(--widgetColor);
+            background-color: var(--fontColor);
+            width: 100%;
+            border-radius: 1rem;
+            border-color: transparent;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            }
+
+    
+
+    .popUpWidgetMainDiv .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .popUpWidgetMainDiv .buttonDiv {
+        
+        margin-block: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--fontColor);
+        color: var(--widgetColor);
+        border-radius: 1rem;
+        font-size: small;
+        padding-inline: 4%;
+        padding-block: 2.5%;
+        cursor: pointer;
+    } .popUpWidgetMainDiv .icon {
+       display: flex;
+        background-color: var(--primary);
+        border-radius: 10rem;
+        color: white;
+        font-size: large;
+        margin-left: 5px;
+        padding: 2px;
+    } .popUpWidgetMainDiv .buttonDiv:hover {
+        transition: all 0.2s;
+       background-color: var(--primary);
+       color: white;
+    } .buttonDiv:hover .icon {
+        transition: all 0.2s;
+       background-color: white;
+       color: black
+    }
+
+    .popUpWidgetMainDiv .buttonDivClose {
+        
+        margin-block: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--backgroundColor);
+        color: var(--fontColor);
+        border-radius: 1rem;
+        font-size: small;
+        padding-inline: 4%;
+        padding-block: 2.5%;
+        cursor: pointer;
+    }  .buttonDivClose:hover .icon {
+       background-color: red;
+       color: white
+    }
+    
+    
+    
+    .popUpWidgetMainDiv .buttonDivClose:hover {
+        transition: all 0.2s;
+       background-color:red;
+       color: white;
+    } .buttonDivClose:hover .icon {
+        transition: all 0.2s;
+       background-color: white;
+       color: rgba(0, 0, 0, 0.7)
+    }
+
+
+
+
+
+    @media(max-width: 550px) {
+
+        .popUpWidgetMainDiv .widget {
+            margin:0;
+            max-width: none;
+            width: 100%;
+            background-color: var(--widgetColor);
+            padding-block: 5%;
+            padding-inline: 5%;
+            margin-bottom: 0%;
+        }
+
+        .popUpWidgetMainDiv {
+            display: flex;
+            width: 100%;
+            background-color: var(--widgetColor);
+            height: 100vh;
+            overflow: hidden;
+            position: fixed;
+            z-index: 10;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-inline: 0%;
+        } 
+    }
+
+
+
+
+    
+
+

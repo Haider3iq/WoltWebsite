@@ -1,0 +1,589 @@
+    
+.restaurantProfileDiv {
+  
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+    --itemTitleSize: clamp(0.5rem, 6vw, 1.8rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(5px, 3vw, 1.3rem); 
+    --iconTextSize: clamp(5px, 2.8vw, 1.3rem); 
+    --smallestTextSize: clamp(5px, 2vw, 15px); 
+    
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 19rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Signika', sans-serif;
+
+    --marginBottom: 2.5%;
+}
+
+
+
+
+
+
+   
+
+    .restaurantProfileMainDiv {
+      background-color: green;
+    }
+
+
+
+    .restaurantProfileDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        height: fit-content;
+        overflow: visible;
+        padding:0;
+        background-color: var(--widgetColor);
+        width: 100%;
+        
+    }
+
+
+
+    .restaurantProfileDiv .goBackIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--backgroundColor);
+        font-size: x-large;
+        color: var(--fontColor);
+        border-radius: 2rem;
+        min-width: 30px;
+        width: 5%;
+        max-width: 60px;
+        aspect-ratio: 3/3;
+        cursor: pointer;
+    } .restaurantProfileDiv .goBackIcon:hover {
+        transition: all 0.3s;
+        background-color: var(--fontColor);
+        color: var(--widgetColor);
+    }
+
+
+    .restaurantProfileDiv .searchComponent {
+        opacity: 0;
+        transition: none;
+    }
+
+    .restaurantProfileDiv .stickyHeader .belowTextDiv{
+        opacity: 0;
+        transition: none;
+    }
+
+    .restaurantProfileDiv .stickyHeader {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 12;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        /* transition: all 0.2s; */
+        padding: 2%;
+        padding-top: 4%;
+        padding-bottom: 5%;
+        height: 10px;
+        transition: none;
+        /* -webkit-box-shadow: -2px -1px 15px 7px rgba(255, 255, 255, 0);
+        -moz-box-shadow: -3px -2px 30px 14px rgba(255, 255, 255, 0.114);
+        box-shadow: -10px 5px 45px  rgba(0, 0, 0, 0.463); */
+    }  .restaurantProfileDiv .belowStickyHeaderDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    } .restaurantProfileDiv .belowStickyHeaderDiv  .averageTimeDiv {
+        position: relative;
+        width: fit-content;
+        font-size: var(--smallestTextSize);
+        line-height: normal;
+      
+        padding-left: 0;
+        margin-right: 0;
+    }.restaurantProfileDiv .belowStickyHeaderDiv .searchComponent{
+        font-size: var(--smallestTextSize);
+
+
+    }
+    
+    .restaurantProfileDiv .belowStickyHeaderDiv  .averageTimeDiv .carIcon {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    
+    .restaurantProfileDiv .belowStickyHeaderDiv .itemTitle { 
+        font-size: var(--iconTextSize);
+        width: fit-content;
+        line-height: normal;
+        margin-left: 1.5%;
+    } .restaurantProfileDiv .belowStickyHeaderDiv .itemSubTitle {
+        font-size: 10px;
+    } .restaurantProfileDiv .belowStickyHeaderDiv .belowTextDiv {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        cursor: pointer;
+    } 
+    
+    .restaurantProfileDiv .belowStickyHeaderDiv .belowTextDiv .belowSubTitle{
+        font-size: var(--smallestTextSize);
+    } .restaurantProfileDiv .belowStickyHeaderDiv .belowTextDiv .openText{
+        font-size: var(--smallestTextSize);
+    }
+    .restaurantProfileDiv .belowStickyHeaderDiv .belowTextDiv:hover {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: var(--widgetColor);
+    } 
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    .restaurantProfileDiv .backgroundImageDiv {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-bottom: var(--marginBottom);
+        max-width: 1200px;
+    }
+
+    .restaurantProfileDiv .averageTimeDiv { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 1.5%;
+        z-index: 10;
+        font-size: 15px;
+        max-width: 1200px;
+        width: 100%;
+        padding-left: 1rem;
+
+    }
+
+    .carIcon {
+        color: white;
+        margin-left: 17px;
+    }
+
+
+    .restaurantProfileDiv .averageTimeSpan {
+          
+            font-family: 'Signika';
+            font-weight: 600;
+            text-shadow: 0px 0.5px 10px #00000074, 0px 0px 0px transparent; 
+            color: white;
+            
+        }
+   
+        .restaurantProfileDiv .profileImageDiv {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-top: -10%;
+            bottom: var(--bottomPosition);
+            width: 100%;
+            padding-right: 1rem;
+            max-width: 1140px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .circleImgeDiv {
+            display: flex;
+            width: 10%;
+            height: auto;
+            background-color: green;
+       
+        }
+        
+        .restaurantProfileDiv .profileImage{
+            
+            width: 25%;
+            aspect-ratio: 1/1;
+            margin-left: 2% ;
+            z-index: 10;
+            padding: 0;
+            max-width: 200px;
+            border-radius: 50%;
+            background-size:cover;
+            background-position: center;
+            
+            border: 8px solid var(--widgetColor);
+
+        } 
+
+        .restaurantProfileDiv .openingTimeDiv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 2%;
+            color: var(--fontColor);
+            font-size: var(--iconTextSize);
+            font-family: 'Signika';
+            font-weight: 500;
+            background-color: var(--backgroundColor);
+            padding: 2px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 6px;
+        }
+
+        .timeIcon {
+            margin-left: 0.5rem
+        }
+
+
+        
+    .restaurantProfileDiv  .backgroundImage{
+        width: 100%;
+        aspect-ratio: 6/2.5;
+        border-bottom-left-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+        margin-right: auto;
+        margin-left: auto;
+        opacity: 0.8;
+
+        
+        /* border-bottom-right-radius: var(--radius); */
+    }
+
+
+
+    .itemsOnBackgroundDiv {
+        position: relative;    
+        margin: 0;
+        padding-left: 0.8rem;
+        max-width: 1140px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+
+
+    
+    .restaurantProfileDiv .titleAndIconDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1090px;
+    }
+
+    .infoIcon {
+        display: flex;
+        font-size: var(--itemSubTitleSize);
+        margin-right: 0.5rem;
+        margin-left: 0.8rem;
+        border-radius: 5rem;
+        background-color: var(--fontColor);
+        color: var(--widgetColor);
+        cursor: pointer;
+    }
+    .infoIcon:hover { 
+        transform: scale(1.3);
+        transition:all 0.3s;
+    }
+
+
+
+
+
+    .restaurantProfileDiv .itemTitle {
+        font-size: var(--itemTitleSize);
+        color: var(--fontColor);
+        font-family: var(--fontFamily);
+        font-weight: bold;
+        line-height: 32px;
+        
+    }
+
+    .restaurantProfileDiv .itemSubTitle {
+        font-size: var(--itemSubTitleSize);
+        color: var(--fontColor);
+        font-family: var(--fontFamily);
+        margin-top: 1%;
+        margin-bottom: 2%;
+       
+    }
+
+    .rateAndminMoneyDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0.8rem;
+        max-width: 1090px;
+    }
+     
+    .restaurantProfileDiv .belowTextDiv {
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--backgroundColor);
+        max-width: max-content;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: -1%;
+        margin-bottom: 0.5%;
+        border-radius: var(--smallerResponsiveSpace);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .restaurantProfileDiv .belowSubTitle {
+        font-size: var(--iconTextSize);
+        color: var(--fontColor);
+        font-family: var(--fontFamily);
+        font-weight: bold;
+        margin-right: 2%;
+        margin-left: 2%;
+        white-space: nowrap;
+    }
+
+    .restaurantProfileDiv .openText {
+        font-size: var(--iconTextSize);
+        color: var(--fontColor);
+        font-family: var(--fontFamily);
+        font-weight: bold;
+        margin-right: 2%;
+        margin-left: 2%;
+        padding-right: var(--smallerResponsiveSpace);
+        padding-left: var(--smallerResponsiveSpace);
+        border-radius: var(--smallerResponsiveSpace);
+        background-color: var(--primary);
+        margin: 2%;
+    }
+
+    .restaurantProfileDiv .menuAndVeticalFood{
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .rateDiv {
+        font-family: var(--fontFamily);
+        color: var(--fontColor);
+        font-size: var(--itemSubTitleSize);
+    }
+
+    .restaurantProfileDiv .menuAndVerticalFood{
+      /* background-color: red;
+      padding: 0; */
+      width: 100%;
+      max-width: 1140px;
+      justify-content: space-between;
+      padding: 2%;
+    }
+
+
+    .restaurantProfileDiv .profileMenuDiv {
+        height: fit-content;
+        position: sticky;
+        top: bottom;
+        z-index: 9;
+        background-color: var(--widgetColor);
+        transition: none;
+    }
+
+    .restaurantProfileDiv .profileStickInfo {
+       /* display: none; */
+       display: none;
+    }
+
+
+    
+
+
+ 
+
+    
+
+    
+
+    @media (max-width: 750px) { 
+        .restaurantProfileDiv  .backgroundImage{
+            aspect-ratio: 6/3.5;
+        }
+    }
+
+    
+    
+        /*#TODO mobile                                                                  */
+        @media (max-width: 555.56px) { 
+            .restaurantProfileDiv  .backgroundImage{
+                aspect-ratio: 6/6;
+            }
+
+            /* .restaurantProfileDiv .stickyHeader {
+                display: none;
+            } */
+
+            
+            .restaurantProfileDiv .profileMenuDiv {
+                height: fit-content;
+                position: sticky;
+                top:0rem;
+                z-index: 9;
+                background-color: var(--widgetColor);
+                padding-top: 7px;
+                padding-bottom: 1px;
+                transition: all 0.2s;
+            }
+
+    
+          
+        }    
+       
+
+
+        @media (min-width: 730px) { 
+            .restaurantProfileDiv {
+                --bottomPosition: 8rem;
+                /* --marginBottom: -5%; */
+            }
+          
+           
+        }    
+
+        @media (max-width: 700px) { 
+
+        }  
+
+        @media (min-width: 1023px) {
+            .restaurantProfileDiv .menuAndVerticalFood{
+                display: flex;
+                flex-direction: row;
+               
+                margin-top: 2%;
+                overflow: visible;
+                width: 100%;
+                max-width: 1200px;
+                
+            }
+            /* Safari */
+            .restaurantProfileDiv .profileMenuDiv {
+                width: 20%;
+                height: fit-content;
+                position: sticky;
+                top: 100px;
+                z-index: 9;
+            }
+
+            .restaurantProfileDiv .profileStickInfo {
+                display: flex;
+                width: 30%;
+                height: fit-content;
+                position: sticky;
+                top: 100px;
+                z-index: 9;
+                background-color: red;
+            }
+        }
+
+ 
+
+        @media (min-width: 1650px) { 
+        .restaurantProfileDiv {
+
+            --marginBottom: 2.5%;
+        }
+    }
+
+
+
+
+
+        
+  
+    
+    
+        .restaurantProfileDiv .headerViewCartButton {
+            display: none;
+        
+    
+        }
+    
+
+
+    @media(min-width: 1020px) {
+        .restaurantProfileDiv .bottomViewCartButton{
+            display: none;
+        }
+
+        .restaurantProfileDiv .headerViewCartButton {
+            display:flex;
+        }
+
+        .restaurantProfileDiv .headerViewCartButton .viewCartButtonDiv {
+            display: flex;
+            position: relative;
+            min-width: 12em;
+            max-width: 16em;
+            left: 0%;
+            transform: translate(0%, 0%);
+            bottom:0;
+            transition: all 0.3s;
+            z-index: 150;
+        }  .restaurantProfileDiv  .headerViewCartButton .viewCartButtonDiv .iconAndNumberDiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            /* background-color: red; */
+            width: fit-content;
+            color: white;
+            font-size: 1.5rem;
+            white-space:nowrap;
+            /* padding-inline: 2%; */
+        }
+        
+    }
+
+ 
+
+
+
+   
+    
+    
+        
+    
+    

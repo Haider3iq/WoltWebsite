@@ -1,0 +1,343 @@
+.multiSelectItems  {
+    --primary: #6043D5;
+    --primaryColorLinear: #B200D1;
+    --secondPrimaryColor: #DBE9F7;
+    
+    --widgetFontColor: #fff;
+    --fontColor: #fff;
+    --backgroundColor: #202124;
+    --widgetColor: #393F48;
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(2rem, 30vw, 10rem);
+    --imageProfileSize: clamp(rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --padding: clamp(0.4rem, 4vw, 2rem); 
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+    @media(max-width: 550px) {
+
+    }
+
+    
+    
+    
+    
+    
+    /* //#111 header styling */
+    .multiSelectItems {
+        background: transparent;
+        display:flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin: 2%;
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        
+    }
+
+    .multiSelectItems {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        
+    }
+    .multiSelectItems::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+
+
+
+    .multiSelectItems .customNavLink {
+        /* margin-right: var(--smallerResponsiveSpace);
+        margin-left: var(--smallerResponsiveSpace); */
+        border-radius: 1.5rem;
+        margin: 1.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid transparent;
+        border-color: transparent;
+        width: fit-content;
+        cursor: pointer;
+        width: 100%;
+        
+        
+    }
+
+
+    /* .multiSelectItems .nav-link {
+
+    } */
+
+
+    
+
+    .multiSelectItems .customNavLink i {
+        display: inline-block;
+
+        /* margin: 0rem 1rem 1rem 1rem; */
+        color: var(--white);
+        
+    }
+
+
+
+  
+
+     .multiSelectItems .customNavLink:hover i {
+        color: var(--white);
+        /* transition: all 0.2s ; */
+       }
+    
+
+       .multiSelectItems  i {
+        color: var(--white);
+        /* transition: all 0.2s ; */
+        width: 100%;
+       }
+       
+
+      .multiSelectItems .activeNavLink {
+        border-radius: 1.5rem;
+        margin: 1.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid transparent;
+        border-color: transparent;
+        width: fit-content;
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+   
+        
+        /* // */
+    }  
+        
+
+    .multiSelectItems .navigationIconDiv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .multiSelectItems .navigationTitle {
+            font-weight: 330;
+            font-size:  70%;
+            color: var(--fontColor);
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            font-weight: 400;
+            height: fit-content;
+            align-items: center;
+            position: relative;
+            z-index: 9;
+        }
+        .multiSelectItems .itemAndTitleDiv {
+            display: flex;
+            flex-direction: row;
+            
+            width: fit-content;
+
+        }
+
+        .multiSelectItems .itemAndTitleDiv .itemCount {
+            margin-right: 5px;
+            color: var(--primaryColorLinear);
+            font-weight: 600;
+            width: fit-content;
+            white-space:nowrap;
+        }
+
+        .multiSelectItems .increaseAndPriceDiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 7rem;
+
+        }
+
+        .multiSelectItems .increaseAndPriceDiv .priceText {
+            display: flex;
+        
+            align-items: center;
+            justify-items: center;
+            justify-content: flex-end;
+            width: fit-content;
+            white-space:nowrap;
+            margin-left: 1rem;
+           
+            
+            
+        }
+
+        .multiSelectItems .unAcitveIcon {
+            color:  white;     
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            justify-content: center;
+            background-color: white;
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 0.2rem;
+            margin-right: 8px;
+        }
+
+        .multiSelectItems .navigationIconDiv  .acitveIconClose{
+            color:  red;     
+            display: none;
+            align-items: center;
+            font-size: 1rem;
+            justify-content: center;
+            background-color: var(--fontColor);
+            
+            border-radius: 0.2rem;
+            margin-right: 1rem;
+            
+        }
+
+        .multiSelectItems .navigationIconDiv  .acitveIcon {
+            color:  var(--primary);     
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            justify-content: center;
+            background-color: var(--fontColor);
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 0.2rem;
+            margin-right: 8px;
+         }
+
+            .multiSelectItems .customNavLink:hover  .unAcitveIcon {
+            color:  transparent;     
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            justify-content: center;
+            background-color: var(--fontColor);
+            border: solid var(--primary) ;
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 0.2rem;
+            transition: all 0.5s;
+            }
+           
+    
+            .multiSelectItems .activeNavLink:hover  .acitveIcon {   
+                display:flex;
+              
+                
+            }
+
+
+
+
+            .smallIncreasingWidgetDiv {
+               width: 2rem;
+               background-color: var(--fontColor);
+               border-radius: 0.4rem;
+               pointer-events: auto;
+            }
+
+
+            .sbilings{
+                position:absolute;
+                width: 200%;
+                height: 100%;
+            }
+
+
+
+
+
+            @media(min-width: 550px) {
+                .multiSelectItems .navigationTitle {
+                    margin-right: 1rem;
+                    font-size:  0.8rem;
+                    background-color: transparent;
+                }
+                .smallIncreasingWidgetDiv {
+                    width: 0rem;
+                    background-color: var(--fontColor);
+                    border-radius: 0.4rem;
+                    pointer-events: auto;
+                 }
+            }
+
+
+
+            @media(max-width: 550px) {
+                .multiSelectItems .navigationTitle {
+                    font-size:  80%;
+                }
+                .smallIncreasingWidgetDiv {
+                    width: 0rem;
+                    background-color: var(--fontColor);
+                    border-radius: 0.4rem;
+                    pointer-events: auto;
+                 }
+            }
+
+
+            @media(max-width: 460px) {
+                .multiSelectItems .navigationTitle {
+                    font-size:  70%;
+                }
+                .smallIncreasingWidgetDiv {
+                    width: 0rem;
+                    background-color: var(--fontColor);
+                    border-radius: 0.4rem;
+                    pointer-events: auto;
+                 }
+            }
+
+           
+
+
+
+            
+
+           
+
+
+
+  

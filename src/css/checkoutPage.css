@@ -1,0 +1,497 @@
+
+  .checkoutPageDiv {
+  
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+
+    --font-size-h1: 1rem;
+    --font-size-h2: 1rem;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .checkoutPageDiv {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .checkoutPageDiv {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+            
+        }
+    }
+
+
+/* 
+     .headerMainDiv{
+        
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-width: 850px;
+        right: auto;
+        left: auto;
+        margin-right: auto;
+        margin-left: auto;
+    } */
+
+    /* .checkoutPageDiv {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--fontColor);
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding: 1rem;
+    } */
+
+
+
+    
+    .checkoutPageDiv {
+        padding: 1rem;
+        background-color: var(--widgetColor);
+        overflow: hidden;
+        width: 100%;
+    }
+
+   
+    .checkoutPageDiv .mainTitle {
+        line-height: 1.2;
+        margin-block: 0 1.5em;
+    } .checkoutPageDiv .mainTitle h1{
+        display: flex;
+        color: var(--fontColor);
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Signika", sans-serif;
+        font-weight: bold;
+        font-size: var(--font-size-h1);
+    }
+
+
+
+    .checkoutPageDiv *{
+        font-family: 'Signika';
+        font-weight: 600;
+    }
+
+    
+
+  
+ 
+  
+
+  
+  .checkoutPageDiv button {
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  .checkoutPageDiv fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .checkoutPageDiv h1 {
+    font-size: var(--font-size-h1);
+    line-height: 1.2;
+    margin-block: 0 1.5em;
+  }
+  
+  .checkoutPageDiv h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-block: 0 0.5em;
+    color: var(--fontColor);
+  }
+  
+  .checkoutPageDiv legend {
+    font-weight: 600;
+    margin-block-end: 0.5em;
+    padding: 0;
+    font-size: var(--font-size-h1);
+    color: var(--fontColor);
+  }
+
+  .checkoutPageDiv .nextText {
+        background-color: var(--fontColor);
+        padding-inline: 0.5em;
+        padding-block: 0.2em;
+        border-radius: 0.3em;
+        color: var(--widgetColor);
+        cursor: pointer;
+    }
+
+    .checkoutPageDiv .backText {
+        background-color: var(--fontColor);
+        padding-inline: 0.5em;
+        padding-block: 0.2em;
+        border-radius: 0.3em;
+        color: var(--widgetColor);
+        cursor: pointer;
+    }
+
+    .checkoutPageDiv .nextText:hover, .backText:hover {
+        transition: all 0.3s;
+        background-color: var(--primary);
+        color: white;
+    }
+
+    .checkoutPageDiv .aboveCridetCardDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        padding-inline: 0.5rem;
+        margin-block-end: 0.5em;
+        font-size: var(--font-size-h1);
+        color: var(--fontColor);
+        }
+
+
+
+
+
+  
+  .checkoutPageDiv input {
+    border: 0;
+    color: inherit;
+    font: inherit;
+  }
+  
+  .checkoutPageDiv input[type="radio"] {
+    accent-color:   lightGreen;
+  }
+  
+  .checkoutPageDiv table {
+    border-collapse: collapse;
+    inline-size: 100%;
+  }
+  
+  .checkoutPageDiv tbody {
+    color: #b4b4b4;
+  }
+  
+  .checkoutPageDiv td {
+    padding-block: 0.125em;
+  }
+  
+  .checkoutPageDiv tfoot {
+    border-top: 1px solid #b4b4b4;
+    font-weight: 600;
+  }
+  
+  .checkoutPageDiv .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .checkoutPageDiv .button {
+    align-items: center;
+    background-color: var(--widgetColor);
+    border-radius: 999em;
+    color: var(--fontColor);
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    padding-block: 0.75em;
+    padding-inline: 1em;
+    transition: 0.3s;
+     -webkit-box-shadow: -2px -1px 15px 7px rgba(255, 255, 255, 0);
+        -moz-box-shadow: -3px -2px 30px 14px rgba(255, 255, 255, 0.114);
+        box-shadow: 0px 10px 20px  rgba(0, 0, 0, 0.463);
+  }
+  
+  .checkoutPageDiv .button:focus,
+  .button:hover {
+    
+    color: var(--widgetColor);
+    background-color: var(--fontColor);
+  }
+  
+  .button--full {
+    inline-size: 100%;
+    position: sticky;
+  }
+  
+
+    .checkoutPageDiv .itemCard, .selectedItems {
+        border-radius: 1em;
+        background-color: var(--fontColor);
+        color: var(--widgetColor);
+        padding: 1em;
+        margin: 0;
+        width: 100%;
+    }  .checkoutPageDiv .addressText  {
+        font-style: normal;
+        margin: 0;
+        margin-bottom: 0;
+        padding: 0;
+        color: var(--widgetColor);
+        font-size: 0.8rem;
+      }
+
+      .checkoutPageDiv .selectedItems {
+        overflow:hidden
+      }
+
+
+
+  
+    .checkoutPageDiv  .form {
+    display: grid;
+    gap: 2em;
+    
+  }
+  
+  .checkoutPageDiv  .form__radios {
+    display: grid;
+    gap: 1em;
+  }
+
+  .checkoutPageDiv  .form__radiosActive .form__radio{
+    transition: all 0.3s;
+    border-color: var(--primary);
+  }
+
+  .checkoutPageDiv  .form__radiosActive .form__radio{
+    transition: all 0.3s;
+    border-color: var(--primary);
+  }
+  
+  .checkoutPageDiv  .form__radio {
+    display: flex;
+    align-items: center;
+    background-color: var(--fontColor);
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    padding: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    border: 2px transparent solid;
+    justify-content: center;
+  }
+
+  .checkoutPageDiv  .form__radio:hover {
+    transition: all 0.3s;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    margin-top: 1em + 3px;
+  }
+
+  .checkoutPageDiv .form__radio .formUnderDiv {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  .checkoutPageDiv  svg {
+    display: none;
+  }
+
+  
+  
+
+/*   
+  .checkoutPageDiv .header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    background-color: red;
+    width: 100rem;
+  } */
+  
+  .checkoutPageDiv  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: currentColor;
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  .checkoutPageDiv  .iphone {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    background-color: var(--fontColor);
+    border-radius: 2em;
+    
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  
+    /* overflow-y: scroll; */
+    padding: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+    margin-bottom: auto;
+    overflow: auto;
+  }
+  
+
+  .checkoutPageDiv td {
+    color: var(--fontColor);
+  }
+
+
+
+  .checkoutPageDiv .paymentInfo {
+    background-color: var(--fontColor);
+    border-radius: 1.5em;
+    padding-top: 0;
+    }
+
+ 
+
+    .checkoutPageDiv .payment__title {
+    color: var(--widgetColor);
+
+  }
+
+  .checkoutPageDiv .cridetCardTitle {
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: var(--widgetColor);  
+    
+  }
+
+
+
+  .checkoutPageDiv option{
+    background-color: var(--fontColor);
+    color: var(--widgetColor);
+    
+    }
+
+    .checkoutPageDiv .ddl {
+        border-color: var(--backgroundColor);
+        background-color: var(--widgetColor);
+        color: var(--fontColor);
+        
+
+      }
+
+      .checkoutPageDiv .txt {
+        border-color: var(--backgroundColor);
+        background-color: var(--widgetColor);
+        color: var(--fontColor);
+        
+      }
+
+
+
+
+  @media(max-width: 550px) {
+    .iphone {
+        background-color: var(--widgetColor);
+        border-radius: 2em;
+        block-size: 0px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+        /* overflow-y: scroll; */
+        padding: 2em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding-bottom: 0;
+      }
+      .checkoutPageDiv .header h1{
+        color: var(--fontColor);
+       }
+
+    
+
+      .checkoutPageDiv .mainTitle {
+        line-height: 1.2;
+        margin-block: 0 0em;
+        margin:0;
+        padding: 0;
+    }.checkoutPageDiv .mainTitle h1{
+        color: var(--fontColor);
+        font-size: 6vw;
+    }
+
+    .checkoutPageDiv .itemCard {
+        padding: 1em;
+        margin: 0;
+    }  .checkoutPageDiv .addressText  {
+        font-style: normal;
+     
+      }
+
+      .checkoutPageDiv .button:focus,
+      .button:hover {
+        
+        color: var(--widgetColor);
+        background-color: var(--fontColor);
+      }
+
+
+  }
+  

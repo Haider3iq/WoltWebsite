@@ -1,0 +1,175 @@
+.customHeaderNav  {
+    --primary: #6043D5;
+    --primaryColorLinear: #B200D1;
+    --secondPrimaryColor: #DBE9F7;
+    
+    --widgetFontColor: #fff;
+    --fontColor: #fff;
+    --backgroundColor: #202124;
+    --widgetColor: #393F48;
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 2.5vw, 2.2rem);
+    --imageProfileSize: clamp(3rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+    @media(max-width: 550px) {
+
+    }
+
+    
+    
+    
+    
+    
+    /* //#111 header styling */
+    .customHeaderNav {
+        background: transparent;
+        display:flex;
+    }
+
+    .customHeaderNav .customNavLink {
+        margin-right: var(--smallerResponsiveSpace);
+        margin-left: var(--smallerResponsiveSpace);
+        margin-top: var(--smallerResponsiveSpace);
+        margin-bottom: var(--smallerResponsiveSpace);
+        padding: var(--smallerResponsiveSpace);
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid transparent;
+    }
+
+    /* .customHeaderNav .nav-link {
+
+    } */
+
+
+    
+
+    .customHeaderNav .customNavLink i {
+        display: inline-block;
+        padding-top: 0.5rem;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        /* margin: 0rem 1rem 1rem 1rem; */
+        color: #7E7E7E; 
+    }
+
+
+        
+    /* .customHeaderNav .customNavLink:active {
+            background-color: red;
+            
+    } */
+
+
+  
+
+    .customHeaderNav .customNavLink:hover {
+        border-bottom: solid var(--white);
+        
+    } .customHeaderNav .customNavLink:hover i {
+        color: var(--white);
+        transition: all 0.2s ;
+        
+       }
+       
+
+      .customHeaderNav .activeNavLink {
+ 
+        transition: all 0.2s ;
+        border-radius: 1.5rem;
+        margin-right: var(--smallerResponsiveSpace);
+        margin-left: var(--smallerResponsiveSpace);
+        margin-top: var(--smallerResponsiveSpace);
+        margin-bottom: var(--smallerResponsiveSpace);
+        padding: var(--smallerResponsiveSpace);
+        padding-top: var(--smallerResponsiveSpace);
+        padding-bottom: var(--smallerResponsiveSpace);
+        background-color: var(--primary);
+        transition: all 0.2s ;
+        font-size: var(--iconSize);
+  
+
+        /* // */
+    } .customHeaderNav .activeNavLink i {
+        display: inline-block;
+        padding-top: 0.5rem;
+        padding-right: 2vw;
+        padding-left: 2vw;
+
+        color: var(--white); 
+        transition: all 0.2s ;
+        }
+
+        .customHeaderNav .navigationIconDiv {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: var(--iconSize);
+        }
+
+        .customHeaderNav .navigationTitle {
+            padding-top: 0.2rem;
+            font-size: var(--textSize);
+        }
+
+    
+
+
+
+    @media only screen and (max-width: 700px) {
+       
+
+    }
+
+    @media only screen and (max-width: 767px) {
+       
+    
+    }
+
+    @media (max-width: 550px) {
+        .customHeaderNav{
+            display: none;
+        }
+        .customSearchComponent .nav-item-custom {
+            display: none;
+            }
+
+            .customHeaderNav {
+                display: none;
+            }
+    }

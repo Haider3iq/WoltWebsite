@@ -1,0 +1,138 @@
+
+
+.RestaurantsDiv  {
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+    --imageProfileSize: clamp(3rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .RestaurantsDiv  {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --pageTitleSize: clamp(4vw, 6vw, 4rem); 
+
+        --textSize: clamp(0.8rem, 3vw, 1vw); 
+        --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+        --imageProfileSize: clamp(3rem, 6vw + 1rem, 4vw);
+        --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+        --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+        --white: #fff;
+        --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+
+
+
+
+    .RestaurantsDiv {
+        background-color: var(--widgetColor);
+    }
+
+
+
+
+    .RestaurantsDiv .pageTitle {
+        padding-top: var(--smallerResponsiveSpace);
+        padding-left: 0;
+        padding-right: 0;
+        color: #fff;
+        font-size: var(--pageTitleSize);
+        font-family: var(--fontFamily);
+        font-weight: bold ;
+        line-height: 1.2;
+    }
+
+    
+
+    .RestaurantsDiv .pageDescription {
+       
+       
+     
+        color: #fff;
+        font-size: var(--textSize);
+        font-family: 'Gill Sans',  Calibri, sans-serif;
+        font-weight: bold ;
+      
+    }
+
+
+
+
+    .RestaurantsDiv .titleDiv {
+        padding-top: 2vw;
+        font-family: var(--fontFamily);
+        font-weight: bold;
+    } .RestaurantsDiv .titleText {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: 1100px) { 
+
+    }
+    @media (max-width: 900px) { 
+        .RestaurantsDiv .titleText {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width: 765px) {
+        .RestaurantsDiv .titleText {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+     }
+    @media (max-width: 555px) { 
+        .RestaurantsDiv  .titleText {
+            color: #fff;
+            font-size: 1rem;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

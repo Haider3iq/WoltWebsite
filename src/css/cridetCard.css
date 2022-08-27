@@ -1,0 +1,106 @@
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+  display: flex;
+}
+
+.txt {
+  border-color: #e1e8ee;
+  width: 100%;
+}
+
+.input {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  height: 48px;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #5e6977;
+}
+
+input[type="text"] {
+  display: initial;
+  padding: 15px;
+}
+
+
+.ddl {
+  border-color: #f0f4f7;
+  background-color: #f0f4f7;
+  width: 100px;
+  margin-right: 10px;
+  
+}
+
+.cridetCardTitle {
+  font-size: 14px;
+  padding-bottom: 8px;
+  
+}
+
+.field {
+  padding-top: 15px;
+
+}
+
+.field.small {
+  width: auto;
+
+}
+
+
+.payment {
+  padding: 20px 0 0 0;
+
+}
+.payment__title {
+  font-size: 18px;
+  display: flex;
+  text-align: left;
+
+}
+
+
+
+
+.paymentInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.payment__cc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-inline: 2.5%;
+    
+}
+
+
+
+
+
+.content {
+  display: block;
+}
+
+
+

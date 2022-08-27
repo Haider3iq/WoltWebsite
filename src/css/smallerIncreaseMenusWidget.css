@@ -1,0 +1,146 @@
+.smallerIncreaseMenusWidget {
+  
+    
+    --widgetFontColor: #fff;
+    --fontColor: #fff;
+    --backgroundColor: #202124;
+    --widgetColor: #393F48;
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(2rem, 30vw, 10rem);
+    --imageProfileSize: clamp(rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --padding: clamp(0.4rem, 4vw, 2rem); 
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightWidgetColor: #393f4820;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightWidgetColor: rgba(255, 255, 255, 0.021);
+        }
+    }
+
+
+
+
+
+ 
+
+    .smallerIncreaseMenusWidget {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        height: 1.35rem;
+        justify-content:space-between;
+        align-items: center;
+        border-radius: 10rem;
+        position: relative;
+        z-index: 10;
+    }
+
+
+
+   
+    
+
+    .smallerIncreaseMenusWidget .plusIcon {
+        display: flex;
+        color: var(--primary);
+        font-size: 2rem;
+        
+        font-size: 1.1rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-top-left-radius: 0.2rem;
+        border-bottom-left-radius: 0.2rem;
+        width: 90%;
+        height: 1.35rem;
+       
+    }
+    .smallerIncreaseMenusWidget .plusIcon:hover {
+        transform: scale(1.00);
+        transition: all 0.2s;
+        background-color: var(--lightWidgetColor);
+    }
+
+    .smallerIncreaseMenusWidget .plusIcon:active {
+        transform: scale(1.00);
+        transition: all 0.2s;
+        background-color: var(--lightWidgetColor);
+    }´
+
+
+
+    .smallerIncreaseMenusWidget .numberText {
+        display: flex;
+        color: var(--widgetColor);
+        font-size: 0.8rem;
+        font-weight: 400;
+        
+    }
+
+     
+    .smallerIncreaseMenusWidget .minusIcon {
+        display: flex;
+        color: var(--primary);
+        font-size: 1.1rem;
+        background-color: transparent;
+        width: 90%;
+        height: 1.35rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-top-right-radius: 0.2rem;
+        border-bottom-right-radius: 0.2rem;
+        
+        }
+
+        .smallerIncreaseMenusWidget .minusIcon:hover {
+            transform: scale(1.00);
+            transition: all 0.2s;
+            background-color: var(--lightWidgetColor);
+        }
+
+
+        .smallerIncreaseMenusWidget .verticalLineBetween {
+            height: 100%;
+            width: 0.1px;
+            background-color: var(--lightWidgetColor);
+        }
+    
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,374 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+
+    
+    
+  
+    
+  .AdCarousel {
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            padding-bottom: 0.7rem;
+    } 
+    
+    
+    .main .arrowIcon{
+        height:fit-content;
+       color: var(--fontColor);
+    } .main .arrowIcon:hover{
+        opacity: 0.9;
+    }.main .arrowIcon:active{
+        border-radius: 20rem;
+        color: var(--primary);
+        background-color: white;
+    }
+    
+    
+    
+   .AdCarousel .posterDiv{
+        border-radius: 1vw;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        width: auto;
+        background-color: var(--backgroundColor);
+        
+    }
+    
+   .AdCarousel .image {
+        position: relative;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
+        width: 300%;
+        /* height: 25rem; */
+        z-index: 0;
+        margin-bottom: -5.5rem;
+    }
+
+
+    .AdCarousel .textDiv {
+        position: relative;
+        
+        padding: 1rem;
+        color: var(--fontColor);
+        
+        } .AdCarousel .title {
+            color: var(--fontColor);
+            font-size: 1.35rem;
+            /* font-family: var(--fontFamily);
+            font-weight:200; */
+        }
+       .AdCarousel .subTitle{
+            color: var(--fontColor); 
+            font-size: 0.9rem;
+            /* font-family: var(--fontFamily);  */
+        }
+
+
+
+    .AdCarousel .image:hover {
+        border: solid var(--fontColor);
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
+        width: 300%;
+        z-index: 2;
+        /* height: 25rem; */
+        margin-bottom: -5.5rem;
+        transition: all 0.4s ;
+    } .AdCarousel .image:hover  .AdCarousel .textDiv {
+        position: relative;
+        z-index: 3;
+        padding: 1rem;
+        color: var(--fontColor);
+        
+        }
+
+
+    
+
+    
+     
+    
+    
+    
+
+
+
+        
+    
+        /*=======> 2nd secren #222222  <=======*/
+        @media (max-width: 1250px) {  
+
+           .AdCarousel .posterDiv{
+                border-radius: 1vw;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+    
+                width: 42rem;
+                background-color: var(--backgroundColor)
+                
+            }
+            
+           .AdCarousel .image {
+                border-top-left-radius: 1vw;
+                border-top-right-radius: 1vw;
+                width: 42rem;
+                height: 25rem;
+                margin-bottom: -5rem;
+            }
+
+            .AdCarousel .textDiv {
+                padding: 1rem;
+                color: var(--fontColor);
+                
+                } .AdCarousel .title {
+                    color: var(--fontColor);
+                    font-size: 1.15rem;
+                    /* font-family: var(--fontFamily);
+                    font-weight:200; */
+                }
+                .AdCarousel .subTitle{
+                    color: var(--fontColor); 
+                    font-size: 0.8rem;
+                    /* font-family: var(--fontFamily);  */
+                }
+        }   
+    
+        @media (max-width: 1100px) {  
+           
+            .AdCarousel .textDiv {
+                padding: 1rem;
+                color: var(--fontColor);
+                
+                } .AdCarousel .title {
+                    color: var(--fontColor);
+                    font-size: 1.15rem;
+                    /* font-family: var(--fontFamily);
+                    font-weight:200; */
+                }
+                .AdCarousel .subTitle{
+                    color: var(--fontColor); 
+                    font-size: 0.8rem;
+                    /* font-family: var(--fontFamily);  */
+                }
+        }   
+    
+    
+    
+    
+        @media (max-width: 900px) {  
+           .AdCarousel .posterDiv{
+                border-radius: 1vw;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+    
+                width: 100rem;
+                background-color: var(--backgroundColor)
+                
+            }
+            
+           .AdCarousel .image {
+                border-top-left-radius: 1vw;
+                border-top-right-radius: 1vw;
+                width: 95vw;
+                height: 22rem;
+                margin-bottom: -5.2rem;
+            }
+            
+           .AdCarousel .textDiv {
+                padding: 1rem;
+                color: var(--fontColor);
+                
+                } .AdCarousel .title {
+                    color: var(--fontColor);
+                    font-size: 1.35rem;
+                    /* font-family: var(--fontFamily);
+                    font-weight:200; */
+                }
+               .AdCarousel .subTitle{
+                    color: var(--fontColor); 
+                    font-size: 0.7rem;
+                    /* font-family: var(--fontFamily);  */
+                }
+        }   
+    
+    
+    
+    
+    
+    
+    /*=======> 3rid secren #333333  <=======*/
+        @media (max-width: 800px) {  
+           .AdCarousel .posterDiv{
+                border-radius: 1vw;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+                
+                width: 100rem;
+                background-color: var(--backgroundColor)
+                
+            }
+            
+           .AdCarousel .image {
+                border-top-left-radius: 1vw;
+                border-top-right-radius: 1vw;
+                width: 95vw;
+                height: 20rem;
+            }
+            
+           .AdCarousel .textDiv {
+                padding: 1rem;
+                color: var(--fontColor);
+                
+                } .AdCarousel .title {
+                    color: var(--fontColor);
+                    font-size: 1.35rem;
+                    /* font-family: var(--fontFamily);
+                    font-weight:200; */
+                }
+               .AdCarousel .subTitle{
+                    color: var(--fontColor); 
+                    font-size: 0.7rem;
+                    /* font-family: var(--fontFamily);  */
+                }
+        }   
+    
+
+
+
+
+
+       
+
+
+
+    
+    
+    
+    
+    
+        /*=======> 4rd secren #444444  <=======*/
+    
+    
+        @media (max-width: 765px) { 
+           .AdCarousel .posterDiv{
+                border-radius: 1vw;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+    
+                width: 100rem;
+                background-color: var(--backgroundColor)
+                
+            }
+            
+           .AdCarousel .image {
+                border-top-left-radius: 1vw;
+                border-top-right-radius: 1vw;
+                width: 95vw;
+                height: 18rem;
+                margin-bottom: -4.5rem;
+            }
+            
+           .AdCarousel .textDiv {
+                padding: 1rem;
+                color: var(--fontColor);
+                
+                }  .AdCarousel .title {
+                    color: var(--fontColor);
+                    font-size: 1rem;
+                    /* font-family: var(--fontFamily);
+                    font-weight:200; */
+                }
+               .AdCarousel .subTitle{
+                    color: var(--fontColor); 
+                    font-size: 0.65rem;
+                    /* font-family: var(--fontFamily);  */
+                }
+        }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        /*#TODO mobile                                                                  */
+        @media (max-width: 555.56px) { 
+    
+            /* ::-webkit-scrollbar {
+                height: 0.2rem;
+                border: 1px;
+                border-radius: 20rem;
+              }
+            
+              ::-webkit-scrollbar-thumb:horizontal{
+                background-color: var(--fontColor);
+                border-radius: 10rem;
+            } */
+           .AdCarousel .posterDiv{
+                border-radius: 1vw;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+    
+                width: 100rem;
+                background-color: var(--backgroundColor)
+                
+            }
+            
+           .AdCarousel .image {
+                border-top-left-radius: 1vw;
+                border-top-right-radius: 1vw;
+                width: 89vw;
+                height: 14rem;
+                margin-bottom: -4.5rem;
+            }
+            
+           .AdCarousel .textDiv {
+                padding: 1rem;
+                color: var(--fontColor);
+                
+                }  .AdCarousel .title {
+                    color: var(--fontColor);
+                    font-size: 1rem;
+                    /* font-family: var(--fontFamily);
+                    font-weight:200; */
+                }
+               .AdCarousel .subTitle{
+                    color: var(--fontColor); 
+                    font-size: 0.65rem;
+                    /* font-family: var(--fontFamily);  */
+                }
+        }    
+       
+    
+    
+    
+        
+    
+    

@@ -1,0 +1,266 @@
+    
+.VerticalMultipleRowList  {
+  
+    --titleSize: clamp(0.5rem, 2.5vw, 1.5rem); 
+    --textSize: clamp(0.3rem, 2vw, 1.2rem); 
+    --smallestText: clamp(0.4rem, 1.5vw, 0.9rem); 
+
+    --titleSizeMobile: clamp(0.5rem, 4vw, 2rem); 
+    --textSizeMobile: clamp(0.3rem, 3vw, 1.5rem); 
+    --smallestTextMobile: clamp(0.2rem, 2.5vw, 1rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp (5rem, 10vw, 5rem);
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+    
+    --imageProfileSize: clamp(3rem, 6vw + 1rem, 4vw);
+    --responsiveSpace: clamp(0.6rem, 10vw, 2vw); 
+    --smallerResponsiveSpace: clamp(0.4rem, 1.5vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        :root {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+        }
+    }
+
+
+    
+ .VerticalMultipleRowList {
+        /* column-width: 18em; */
+        column-width: 20em;
+        display: inline block;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        
+     }
+   
+
+     @media (min-width: 2900px) {
+        .VerticalMultipleRowList {
+            column-width: 60em;
+         }
+    
+    }
+
+    @media (min-width: 2600px) {
+        .VerticalMultipleRowList {
+            columns: 2;
+            column-width: 50em;
+         }
+    
+    }
+
+   
+     @media (min-width: 1804px) {
+        .VerticalMultipleRowList {
+            columns: 2;
+            column-width: 25em;
+         }
+    
+    }
+
+    @media(max-width: 300px) {
+        .VerticalMultipleRowList {
+            column-width: 5em;
+            columns: 2;
+         }
+    }
+
+    @media(max-width:634px) {
+        .VerticalMultipleRowList {
+            column-width: 15em;
+            columns: 2;
+         }
+    }
+ 
+
+
+
+
+
+    
+
+.VerticalMultipleRowList    .swiperImageDiv {
+        width: 100%;
+        height: 100%;
+        -webkit-column-break-inside: avoid;
+        margin-right: 0;
+        margin-left: 0;
+
+      }
+
+
+
+      
+.VerticalMultipleRowList    .swiperImageDiv:hover {
+    transform: scale(1.05);
+    transition: all 0.25s ;
+  }
+      
+
+      
+  .VerticalMultipleRowList    .swiperImgBx {
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+
+    
+
+   .VerticalMultipleRowList    .swiperImage {
+        border-top-right-radius: var(--smallerResponsiveSpace);
+        border-top-left-radius: var(--smallerResponsiveSpace);
+        width: 100%;
+        height: 100%;
+        }
+
+
+     .VerticalMultipleRowList    .swiperTextDiv {
+            padding: 1vw;
+            margin-bottom: var(--responsiveSpace);
+            border-bottom-left-radius: var(--smallerResponsiveSpace);
+            border-bottom-right-radius: var(--smallerResponsiveSpace);
+            background-color: var(--backgroundColor)
+           
+            }
+
+     
+
+            
+
+        
+
+
+.VerticalMultipleRowList    .title {
+        color: var(--fontColor);
+        font-size: var(--titleSize);
+        font-family: var(--fontFamily);
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        /* font-family: var(--fontFamily);
+        font-weight:200; */
+    }
+   
+.VerticalMultipleRowList .subTitle{
+        color: var(--fontColor); 
+        font-size: var(--textSize);
+        font-family: var(--fontFamily);
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        /* font-family: var(--fontFamily);  */
+    }
+
+    .VerticalMultipleRowList .priceTextDiv {
+        display: flex;
+        align-items: center;
+        width: 110%;
+        
+        border-top: solid var(--widgetColor);
+        border-width: 0.1rem;
+        margin-top: 2.5%;
+        padding: 2.5%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0;
+        margin-right:-2.5%;
+        margin-left: -5%;
+    }
+    .VerticalMultipleRowList .priceTextDiv .title {
+        margin-left: var(--smallerResponsiveSpace);
+        margin-right: var(--smallerResponsiveSpace);
+        font-size: var(--smallestText);
+        font-family: var(--fontFamily);
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .VerticalMultipleRowList .priceTextDiv .subTitle {
+        margin-right: var(--smallerResponsiveSpace);
+        font-size: var(--smallestText);
+        font-family: var(--fontFamily);
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    
+    
+        /*#TODO mobile                                                                  */
+        @media (max-width: 555.56px) { 
+        .VerticalMultipleRowList    .mySwiper .swiper-button-prev {
+                display: none;
+            }
+        .VerticalMultipleRowList    .mySwiper .swiper-button-next {
+                display: none;
+            }
+
+        }    
+
+
+        @media (max-width: 500.56px) { 
+            .VerticalMultipleRowList    .mySwiper .swiper-button-prev {
+                    display: none;
+                }
+            .VerticalMultipleRowList    .mySwiper .swiper-button-next {
+                    display: none;
+                }
+    
+                .VerticalMultipleRowList    .title { 
+                    font-size: var(--titleSizeMobile);
+                }
+    
+                .VerticalMultipleRowList .subTitle{
+                        font-size: var(--textSizeMobile);
+                    }
+    
+                    .VerticalMultipleRowList .priceTextDiv .title {
+                        font-size: var(--smallestTextMobile);
+                    }
+                    .VerticalMultipleRowList .priceTextDiv .subTitle {
+                        font-size: var(--smallestTextMobile);
+                    }
+              
+               
+            }    
+       
+    
+    
+    
+        
+    
+    

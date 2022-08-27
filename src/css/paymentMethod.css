@@ -1,0 +1,331 @@
+
+  .paymentMethodListDiv {
+  
+    --pageTitleSize: clamp(4vw, 6vw, 3rem); 
+    --titleSize: clamp(1rem, 3vw, 1.2vw); 
+    --textSize: clamp(0.8rem, 3vw, 1vw); 
+    --iconSize: clamp(1.5rem, 5vw, 2.2rem);
+
+
+    --itemTitleSize: clamp(0.8rem, 3vw, 2rem); 
+    --titleSpace: clamp(0.6rem, 5vw, 2rem); 
+    --itemSubTitleSize: clamp(0.5rem, 2.8vw, 1.5rem); 
+
+
+    --iconSize: clamp(0.5rem, 3vw, 3rem);
+    --smallerIconSize: clamp(1rem, 3vw, 2rem);
+    --paddingBottom: clamp(5rem, 10vw, 5rem);
+    --radius: clamp(1rem, 7vw, 5rem);
+
+    --imageHeight: clamp(10rem, 25vw, 20rem);
+    
+    --bottomPosition: clamp(3.5rem, 18vw, 16rem);
+    --imageProfileSize: clamp(7rem, 28vw, 24rem);
+    --responsiveSpace: clamp(0.6rem, 2vw, 0.5vw);
+  
+    --smallerResponsiveSpace: clamp(0.4rem, 2vw, 0.5vw); 
+    --white: #fff;
+    --borderWidrth: clamp(0.09rem, 1.2vw, 0.2vw);
+
+    --fontFamily: 'Gill Sans',  Calibri, sans-serif;
+
+    --marginBottom: 2.5%;
+    --lightBlack: rgba(0, 0, 0, 0.3);
+
+    --font-size-h1: 1rem;
+    --font-size-h2: 1rem;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    .paymentMethodListDiv {
+        --primary: #6043D5;
+        --primaryColorLinear: #B200D1;
+        --secondPrimaryColor: #DBE9F7;
+        --greenColorLinear: #EBF7FD;
+        
+        --widgetFontColor: #fff;
+        --fontColor: #fff;
+        --lighterFontColor: rgba(255, 255, 255, 0.92);
+        --backgroundColor: #202124;
+        --widgetColor: #393F48;
+        --lightBlack: rgba(0, 0, 0, 0.3);
+    }
+    }
+    
+    @media (prefers-color-scheme: light) { 
+        .paymentMethodListDiv {
+            --primary: #6043D5;
+            --primaryColorLinear: #B200D1;
+            --greenColorLinear: lightGreen;
+            --secondPrimaryColor: #DBE9F7;
+            --fontColor: #202124;
+            --lighterFontColor: rgba(32, 33, 36, 0.92);
+            --widgetFontColor: #202124;
+            --backgroundColor: #fff;
+            --widgetColor: #F9F9F9;
+            --lightBlack: rgba(255, 255, 255, 0.3);
+            
+        }
+    }
+
+
+/* 
+     .headerMainDiv{
+        
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-width: 850px;
+        right: auto;
+        left: auto;
+        margin-right: auto;
+        margin-left: auto;
+    } */
+
+    /* .paymentMethodListDiv {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--fontColor);
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding: 1rem;
+    } */
+
+
+
+    
+    .paymentMethodListDiv {
+        background-color: var(--widgetColor);
+        overflow: hidden;
+        width: 100%;
+    }
+
+
+    .paymentMethodListDiv .paymentMethod {
+      display: flex;
+      color: var(--primary);
+      height: 5%;
+      width: 5%;
+    }
+
+   
+
+
+
+
+  
+
+
+  
+
+   
+
+
+
+  
+    .paymentMethodListDiv  .form {
+    display: grid;
+    gap: 2em;
+    
+  }
+  
+  .paymentMethodListDiv  .form__radios {
+    display: grid;
+    gap: 1em;
+  }
+
+  .paymentMethodListDiv  .form__radiosActive .form__radio{
+    transition: all 0.3s;
+    border-color: var(--primary);
+  }
+
+  .paymentMethodListDiv  .form__radiosActive .form__radio{
+    transition: all 0.3s;
+    border-color: var(--primary);
+  }
+  
+  .paymentMethodListDiv  .form__radio {
+    display: flex;
+    align-items: center;
+    background-color: var(--fontColor);
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    padding: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    border: 2px transparent solid;
+    justify-content: center;
+  }
+
+  .paymentMethodListDiv  .form__radio:hover {
+    transition: all 0.3s;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    margin-top: 1em + 3px;
+  }
+
+  .paymentMethodListDiv .form__radio .formUnderDiv {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  .paymentMethodListDiv  svg {
+    display: none;
+  }
+
+  
+  
+
+/*   
+  .paymentMethodListDiv .header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    background-color: red;
+    width: 100rem;
+  } */
+  
+  .paymentMethodListDiv  .customIcon {
+    block-size: 1em;
+    display: inline-block;
+    fill: currentColor;
+    inline-size: 1em;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+  
+  .paymentMethodListDiv  .iphone {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    background-color: var(--fontColor);
+    border-radius: 2em;
+    
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  
+    /* overflow-y: scroll; */
+    padding: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+    margin-bottom: auto;
+    overflow: auto;
+  }
+  
+
+  .paymentMethodListDiv td {
+    color: var(--fontColor);
+  }
+
+
+
+  .paymentMethodListDiv .paymentInfo {
+    background-color: var(--fontColor);
+    border-radius: 1.5em;
+    padding-top: 0;
+    }
+
+ 
+
+    .paymentMethodListDiv .payment__title {
+    color: var(--widgetColor);
+
+  }
+
+  .paymentMethodListDiv .cridetCardTitle {
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: var(--widgetColor);  
+    
+  }
+
+
+
+  .paymentMethodListDiv option{
+    background-color: var(--fontColor);
+    color: var(--widgetColor);
+    
+    }
+
+    .paymentMethodListDiv .ddl {
+        border-color: var(--backgroundColor);
+        background-color: var(--widgetColor);
+        color: var(--fontColor);
+        
+
+      }
+
+      .paymentMethodListDiv .txt {
+        border-color: var(--backgroundColor);
+        background-color: var(--widgetColor);
+        color: var(--fontColor);
+        
+      }
+
+
+
+
+  @media(max-width: 550px) {
+    .iphone {
+        background-color: var(--widgetColor);
+        border-radius: 2em;
+        block-size: 0px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+        /* overflow-y: scroll; */
+        padding: 2em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding-bottom: 0;
+      }
+      .paymentMethodListDiv .header h1{
+        color: var(--fontColor);
+       }
+
+    
+
+      .paymentMethodListDiv .mainTitle {
+        line-height: 1.2;
+        margin-block: 0 0em;
+        margin:0;
+        padding: 0;
+    }.paymentMethodListDiv .mainTitle h1{
+        color: var(--fontColor);
+        font-size: 6vw;
+    }
+
+    .paymentMethodListDiv .itemCard {
+        padding: 1em;
+        margin: 0;
+    }  .paymentMethodListDiv .addressText  {
+        font-style: normal;
+     
+      }
+
+      .paymentMethodListDiv .button:focus,
+      .button:hover {
+        
+        color: var(--widgetColor);
+        background-color: var(--fontColor);
+      }
+
+
+  }
+  
